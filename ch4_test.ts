@@ -1,5 +1,5 @@
 import { assertEquals } from "@std/assert";
-import { sum } from "./sum.ts";
+import { sum } from "./ch4.ts";
 
 Deno.test(function sumTest() {
   assertEquals(sum([2, 3]), 5);
