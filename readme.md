@@ -6,7 +6,7 @@ Exercises from the book [grokking algorithms](https://www.manning.com/books/grok
 
 ```bash
 # run every example from main
-deno run dev
+deno run main.ts
 # execute tests
 deno test
 ```
