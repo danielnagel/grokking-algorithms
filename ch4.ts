@@ -5,3 +5,12 @@ export const max = (arr: number[]): number => {
     const m = max(arr.slice(1));
     return arr[0] > m ? arr[0] : m;
 }
+export const quicksort = (arr: number[]): number[] => {
+    if(arr.length < 2) return arr;
+    const pivotIndex = 0;
+    const pivot = arr[pivotIndex];
+    arr.splice(pivotIndex, 1)
+    const lesser = arr.filter(n => n < pivot);
+    const greater = arr.filter(n => n >= pivot);
+    return [...quicksort(lesser), pivot, ...quicksort(greater)];
+}
